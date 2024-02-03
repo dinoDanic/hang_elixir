@@ -1,6 +1,5 @@
-defmodule Runtime.Server do
-  alias Impl.WordList
-
+defmodule Dictionary.Runtime.Server do
+  alias Dictionary.Impl.WordList
   @me __MODULE__
 
   @type t :: pid()

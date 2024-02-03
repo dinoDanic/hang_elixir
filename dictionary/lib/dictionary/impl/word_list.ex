@@ -1,4 +1,4 @@
-defmodule Impl.WordList do
+defmodule Dictionary.Impl.WordList do
   @type t :: list(String)
 
   @spec word_list() :: t
