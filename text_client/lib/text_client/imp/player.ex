@@ -6,9 +6,8 @@ defmodule TextClient.Imp.Player do
 
   @typep state :: {game, tally}
 
-  @spec start() :: :ok
-  def start() do
-    game = Hangman.new_game()
+  @spec start(game) :: :ok
+  def start(game) do
     tally = Hangman.tally(game)
     interact({game, tally})
   end
